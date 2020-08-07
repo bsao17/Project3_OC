@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "aileronblack";
+  src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot");
+  src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot?#iefix") format("embedded-opentype"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff2") format("woff2"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff") format("woff"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.ttf") format("truetype"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.svg#aileronblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aileronbold";
+  src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot");
+  src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff2") format("woff2"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff") format("woff"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.ttf") format("truetype"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-image: url(../pictures/svgPictures/1254616.svg);
+  background-size: 50%;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/*----------------------------------------- partie réservée aux média queries --------------------------------------------------------------*/
+@media screen and (max-width: 835px) {
+  #containerMap {
+    display: block !important;
+  }
+
+  #map {
+    width: 80vw !important;
+  }
+
+  #rent {
+    width: 80vw !important;
+    margin-top: 3vh !important;
+  }
+
+  fieldset {
+    font-size: 3vw !important;
+    margin-top: 2vh;
+  }
+
+  #firstNameLabel {
+    font-size: 3vw;
+  }
+
+  #lastNameLabel {
+    font-size: 3vw;
+  }
+
+  #canvasDisplay {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  #containerMap {
+    display: block !important;
+  }
+
+  #map {
+    width: 80vw !important;
+  }
+
+  #rent {
+    width: 80vw !important;
+  }
+
+  #bouton {
+    width: 4rem !important;
+    height: 4rem !important;
+    top: 115% !important;
+    left: 40% !important;
+  }
+
+  fieldset {
+    font-size: 5vw !important;
+  }
+}
+/* -------------------------------------------------- style css  ---------------------------------------------------------------------------*/
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#display {
+  width: 80vw;
+  height: auto;
+  overflow: hidden;
+  padding: 0.25rem;
+  border: #c2c1c1 0.5rem outset;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 5px 5px;
+  background-color: rgba(59, 59, 59, 0.7);
+}
+
+.item1 {
+  border: ridge rgba(0, 76, 139, 0.61) 0.5rem;
+  border-radius: 15px;
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 0.5rem;
+  padding: 10px 0px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 3vw;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  color: white;
+}
+.item1 #marque {
+  font-weight: bold;
+  font-size: 4vw;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+.navigation .bouton {
+  width: 2rem;
+  height: 2rem;
+  margin: 10px;
+  padding: 5px;
+  border: solid white 2px;
+  border-radius: 5px;
+  background-color: gray;
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 5px 5px;
+}
+.navigation button {
+  padding: 10px;
+  margin: 5px;
+}
+.navigation :active {
+  transform: scale(0.89);
+}
+
+#containerMap {
+  display: flex;
+  margin: auto;
+  width: 97vw;
+}
+#containerMap #map {
+  width: 40%;
+  height: 40rem;
+  padding: 0.5rem 0px 0px 0px;
+  border: outset #c2c1c1 0.5rem;
+  border-radius: 50px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 5px 5px;
+}
+#containerMap #rent {
+  width: 40%;
+  height: 40rem;
+  border: outset #c2c1c1 0.5rem;
+  border-radius: 50px;
+  margin: auto;
+  padding: 0.5rem 5px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 5px 5px;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+#containerMap #rent h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+}
+#containerMap #rent h2 #info1, #containerMap #rent h2 #info2, #containerMap #rent h2 #info3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 2rem;
+  border: solid black 2px;
+  background-color: white;
+  padding: 5px;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: black;
+  overflow: auto;
+  box-shadow: black 5px 5px 5px;
+}
+#containerMap #rent fieldset {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border: solid white 5px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #999999;
+}
+#containerMap #rent #renseignementsStations {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+#containerMap #rent #renseignementsBordure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+  height: 6rem;
+  position: relative;
+}
+#containerMap #rent #renseignements {
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#containerMap #rent #firstName {
+  height: 2rem;
+  width: 51%;
+  box-shadow: black 5px 5px 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+#containerMap #rent #lastName {
+  height: 2rem;
+  width: 60%;
+  box-shadow: black 5px 5px 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#containerMap #rent #bouton {
+  width: 15%;
+  height: 4rem;
+  position: absolute;
+  bottom: -6rem;
+  right: 45%;
+  border-radius: 50%;
+  border: outset gray 0.5rem;
+}
+
+.timeCounter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: solid white 5px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #999999;
+  width: 85vw;
+  margin: auto;
+  position: relative;
+}
+.timeCounter #identity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.timeCounter #identity span {
+  font-weight: bold;
+  color: red;
+}
+.timeCounter #identity #canvasDisplay {
+  right: 0vw;
+  top: 15px;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: honeydew;
+  margin: 0em;
+}
+.timeCounter #identity .canvasButton {
+  width: 25%;
+  right: 10%;
+  bottom: 10px;
+  background-color: rgba(0, 76, 139, 0.61);
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.timeCounter #identity #dataSubmit {
+  margin-bottom: 10px;
+}
+.timeCounter #legendeReservation {
+  color: rgba(0, 76, 139, 0.61);
+  text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+}
+
+.index {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.warning {
+  font-size: 1rem;
+  font-style: italic;
+  color: #0000009f;
+}
+
+/*# sourceMappingURL=style.css.map */

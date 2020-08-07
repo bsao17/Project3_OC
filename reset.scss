@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "aileronblack";
+    src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot");
+    src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff2")
+        format("woff2"),
+      url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff")
+        format("woff"),
+      url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.ttf")
+        format("truetype"),
+      url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.svg#aileronblack")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "aileronbold";
+    src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot");
+    src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff2")
+        format("woff2"),
+      url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff")
+        format("woff"),
+      url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.ttf")
+        format("truetype"),
+      url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.svg#aileronbold")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+$globalColor: rgba(0, 76, 139, 0.61);
+$fontColor: #0000009f;
+$blackShadow: rgba(0, 0, 0, 0.6);
+$borderColor:rgb(194, 193, 193);
+$fontGlobal:"aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+"aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+Arial, Helvetica, sans-serif;
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-image:url(../pictures/svgPictures/1254616.svg);
+    background-size: 50%;
+}
+a{
+    color: black;
+}
+a:visited{
+    color: black;
+}

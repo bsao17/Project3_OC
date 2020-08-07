@@ -1,0 +1,11 @@
+{
+  "name": "bicyclelocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:CSS/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
