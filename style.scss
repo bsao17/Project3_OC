@@ -1,59 +1,53 @@
-
 @import "reset.scss";
 
 /*----------------------------------------- partie réservée aux média queries --------------------------------------------------------------*/
 
-
-@media screen and (max-width : 835px){
-
-  #containerMap{
-    display:block !important;
+@media screen and (max-width: 835px) {
+  #containerMap {
+    display: block !important;
   }
-  #map{
+  #map {
     width: 80vw !important;
   }
-  #rent{
+  #rent {
     width: 80vw !important;
     margin-top: 3vh !important;
   }
-  
-  fieldset{
+
+  fieldset {
     font-size: 3vw !important;
     margin-top: 2vh;
   }
-  #firstNameLabel{
+  #firstNameLabel {
     font-size: 3vw;
   }
-  #lastNameLabel{
+  #lastNameLabel {
     font-size: 3vw;
   }
-  #canvasDisplay{
+  #canvasDisplay {
     width: 60vw;
   }
 }
-@media screen and (max-width : 370px){
-
-  #containerMap{
-    display:block !important;
+@media screen and (max-width: 370px) {
+  #containerMap {
+    display: block !important;
   }
-  #map{
+  #map {
     width: 80vw !important;
   }
-  #rent{
+  #rent {
     width: 80vw !important;
   }
-  #bouton{
+  #bouton {
     width: 4rem !important;
     height: 4rem !important;
     top: 115% !important;
     left: 40% !important;
   }
-  fieldset{
+  fieldset {
     font-size: 5vw !important;
   }
 }
-
-
 
 /* -------------------------------------------------- style css  ---------------------------------------------------------------------------*/
 
@@ -66,7 +60,7 @@
   margin: auto;
   margin-top: 2rem;
 }
-#display{  
+#display {
   width: 80vw;
   height: auto;
   overflow: hidden;
@@ -75,8 +69,6 @@
   border-radius: 50px;
   box-shadow: $blackShadow 10px 5px 5px;
   background-color: rgba(59, 59, 59, 0.7);
-
-  
 }
 .item1 {
   border: ridge $globalColor 0.5rem;
@@ -89,9 +81,10 @@
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 3vw;
   font-family: $fontGlobal;
-  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
   color: white;
-  #marque{
+  #marque {
     font-weight: bold;
     font-size: 4vw;
     font-family: $fontGlobal;
@@ -122,29 +115,29 @@
   }
 }
 
-#containerMap{
+#containerMap {
   display: flex;
   margin: auto;
   width: 97vw;
-  #map{
+  #map {
     width: 40%;
     height: 40rem;
-    padding: 0.5rem 0px 0px 0px ;
+    padding: 0.5rem 0px 0px 0px;
     border: outset $borderColor 0.5rem;
     border-radius: 50px;
     margin: auto;
     box-shadow: $blackShadow 10px 5px 5px;
   }
-  #rent{
+  #rent {
     width: 40%;
     height: 40rem;
     border: outset $borderColor 0.5rem;
     border-radius: 50px;
     margin: auto;
-    padding: 0.5rem 5px 0px 5px ;
+    padding: 0.5rem 5px 0px 5px;
     box-shadow: $blackShadow 10px 5px 5px;
     background-color: rgba(128, 128, 128, 0.9);
-    h2{
+    h2 {
       display: flex;
       justify-content: start;
       align-items: center;
@@ -153,7 +146,9 @@
       font-size: 1.2rem;
       // margin: 1.5rem 0rem 0rem 2rem;
       font-family: $fontGlobal;
-      #info1, #info2, #info3{
+      #info1,
+      #info2,
+      #info3 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,7 +165,7 @@
         box-shadow: black 5px 5px 5px;
       }
     }
-    fieldset{
+    fieldset {
       padding-top: 20px;
       padding-bottom: 60px;
       border: solid white 5px;
@@ -180,14 +175,13 @@
       color: white;
       background-color: rgb(153, 153, 153);
     }
-    #renseignementsStations{
+    #renseignementsStations {
       display: flex;
       flex-direction: column;
-      
-      overflow: auto;
 
+      overflow: auto;
     }
-    #renseignementsBordure{
+    #renseignementsBordure {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -196,12 +190,12 @@
       height: 6rem;
       position: relative;
     }
-    #renseignements{
+    #renseignements {
       font-family: $fontGlobal;
       font-size: 1.5rem;
       font-weight: bold;
     }
-    #firstName{
+    #firstName {
       height: 2rem;
       width: 51%;
       box-shadow: black 5px 5px 5px;
@@ -209,28 +203,27 @@
       text-align: center;
       margin: 1rem;
     }
-    #lastName{
+    #lastName {
       height: 2rem;
       width: 60%;
       box-shadow: black 5px 5px 5px;
       font-size: 1.5rem;
       text-align: center;
     }
-    #bouton{
+    #bouton {
       width: 15%;
       height: 4rem;
       position: absolute;
       bottom: -6rem;
       right: 45%;
-      
+
       border-radius: 50%;
       border: outset gray 0.5rem;
     }
-    
   }
 }
-  
-.timeCounter{
+
+.timeCounter {
   padding-top: 20px;
   padding-bottom: 20px;
   border: solid white 5px;
@@ -242,53 +235,52 @@
   width: 85vw;
   margin: auto;
   position: relative;
-      #identity{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+  #identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-        span{
-          font-weight: bold;
-          color: red ;
-        }
-        
-        #canvasDisplay{
-          right: 0vw;
-          top: 15px;
-          border: solid black 1px;
-          border-radius: 10px;
-          background-color: honeydew;
-        margin: 0em;
-        }
-        .canvasButton{
-          width: 25%;
-          right: 10%;
-          bottom: 10px;
-          background-color: $globalColor;
-          color: whitesmoke;
-          font-size: 1.2rem;
-        }
+    span {
+      font-weight: bold;
+      color: red;
+    }
 
-        #dataSubmit{
-          margin-bottom: 10px;
-        }
+    #canvasDisplay {
+      right: 0vw;
+      top: 15px;
+      border: solid black 1px;
+      border-radius: 10px;
+      background-color: honeydew;
+      margin: 0em;
     }
-    #legendeReservation{
-      color: $globalColor;
-      text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    .canvasButton {
+      width: 25%;
+      right: 10%;
+      bottom: 10px;
+      background-color: $globalColor;
+      color: whitesmoke;
+      font-size: 1.2rem;
     }
-    
-  
+
+    #dataSubmit {
+      margin-bottom: 10px;
+    }
+  }
+  #legendeReservation {
+    color: $globalColor;
+    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px,
+      #ffffff 1px -1px;
+  }
 }
 
-.index{
+.index {
   color: red;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.warning{
+.warning {
   font-size: 1rem;
   font-style: italic;
   color: $fontColor;

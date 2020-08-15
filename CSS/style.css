@@ -2,14 +2,32 @@
 @font-face {
   font-family: "aileronblack";
   src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot");
-  src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot?#iefix") format("embedded-opentype"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff2") format("woff2"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff") format("woff"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.ttf") format("truetype"), url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.svg#aileronblack") format("svg");
+  src: url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff2")
+      format("woff2"),
+    url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.woff")
+      format("woff"),
+    url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.ttf")
+      format("truetype"),
+    url("aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.svg#aileronblack")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "aileronbold";
   src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot");
-  src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff2") format("woff2"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff") format("woff"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.ttf") format("truetype"), url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.svg#aileronbold") format("svg");
+  src: url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff2")
+      format("woff2"),
+    url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff")
+      format("woff"),
+    url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.ttf")
+      format("truetype"),
+    url("aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.svg#aileronbold")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -122,14 +140,19 @@ a:visited {
   padding: 10px 0px 10px 0px;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 3vw;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
-  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
   color: white;
 }
 .item1 #marque {
   font-weight: bold;
   font-size: 4vw;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
 }
 
 .navigation {
@@ -188,9 +211,13 @@ a:visited {
   text-align: start;
   color: white;
   font-size: 1.2rem;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
 }
-#containerMap #rent h2 #info1, #containerMap #rent h2 #info2, #containerMap #rent h2 #info3 {
+#containerMap #rent h2 #info1,
+#containerMap #rent h2 #info2,
+#containerMap #rent h2 #info3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +226,9 @@ a:visited {
   border: solid black 2px;
   background-color: white;
   padding: 5px;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: bolder;
   color: black;
@@ -212,7 +241,9 @@ a:visited {
   border: solid white 5px;
   border-radius: 15px;
   font-size: 1.5rem;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
   color: white;
   background-color: #999999;
 }
@@ -231,7 +262,9 @@ a:visited {
   position: relative;
 }
 #containerMap #rent #renseignements {
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -266,7 +299,9 @@ a:visited {
   border: solid white 5px;
   border-radius: 15px;
   font-size: 1.5rem;
-  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot", "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot", Arial, Helvetica, sans-serif;
+  font-family: "aileron-fontfacekit/web fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot",
+    "aileron-fontfacekit/web/ fonts/#aileronblack/Aileron-Black-webfont.eot",
+    Arial, Helvetica, sans-serif;
   color: white;
   background-color: #999999;
   width: 85vw;
@@ -304,7 +339,8 @@ a:visited {
 }
 .timeCounter #legendeReservation {
   color: rgba(0, 76, 139, 0.61);
-  text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+  text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px,
+    #ffffff 1px -1px;
 }
 
 .index {
