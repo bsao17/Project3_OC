@@ -86,6 +86,8 @@ document.querySelector("#buttonConfirmResa").addEventListener("click", () => {
 });
 
 //Fonction de récupération/enregistrement/restitution des données utilisateurs
+
+
 const requirePersonalData = () => {
   rentSendButton.disabled = true;
   let firstName = document.getElementById("firstName").value;
