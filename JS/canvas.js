@@ -1,3 +1,6 @@
+"use strict";
+
+
 class Canvas {
   constructor() {
       this.canvas = $('#canvasDisplay');
@@ -12,10 +15,12 @@ class Canvas {
       this.context.strokeStyle = "#5cadd3";
       this.initCanvas();   
       this.count = 0;
+      this.canvasEmpty = true;
   }
 
   startPosition(e) {
       this.draw = true; 
+      this.canvasEmpty =true
       this.paint(e);
   }
 
@@ -38,14 +43,6 @@ class Canvas {
       this.context.beginPath();
       this.context.moveTo(e.offsetX, e.offsetY);
       this.count++;
-      // verify if signature is adequate (50 points)
-      if (this.count < 50) {
-          $('#message_canvas').text('Votre signature n\'est pas assez longue.');
-          $('#confirm_location').hide();
-      } else {
-          $('#message_canvas').text('');
-          $('#confirm_location').show();
-      }
   }
 
   paintPad(e) {
@@ -70,7 +67,7 @@ class Canvas {
 
   // init different actions do with mouse or finger (for touchscreen)
   initCanvas() {
-      this.canvas.mousedown(e => { this.startPosition(e); });
+      this.canvas.mousedown(e => { this.startPosition(e); this.canvasEmpty = false; this.canvasEmptydisplay(); });
       this.canvas.mouseup(() => { this.stopPosition() });
       this.canvas.mouseleave(() => { this.stopPosition() });
       this.canvas.mousemove(e => { this.paint(e);});
@@ -81,18 +78,20 @@ class Canvas {
       // clear the canvas on click button "clear" or after click on reservation button
       this.clear.click(() => {
           this.context.clearRect(0, 0, this.canvas_width, this.canvas_height);
-          $('#confirm_location').hide();
-          this.count = 0;
+         
       });
-      $('#confirm_location').click(() => {
-          const storage = new LocalStorage();
-          storage.setInfos();
-          sessionStorage.setItem('minutes_timer', 20);
-          sessionStorage.setItem('seconds_timer', 0);
-          sessionStorage.stationName = $('.station_name').html()
-          this.context.clearRect(0, 0, this.canvas_width, this.canvas_height);
-      })
+     
   };
-};
+
+    canvasEmptydisplay() {
+      if (this.canvasEmpty) {
+        document.querySelector("#buttonConfirmResa").style.opacity = "1";
+      } else if (this.canvasEmpty == false) {
+        document.querySelector("#buttonConfirmResa").style.opacity = "1";
+      }
+    }
+};  
 
 const canvas = new Canvas();
+
+
