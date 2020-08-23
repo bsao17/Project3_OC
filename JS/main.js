@@ -138,8 +138,3 @@ const requirePersonalData = () => {
   }
 })();
 
-// canvas
-
-let rentSignature = new Signature("canvasDisplay", "buttonClearSignature");
-rentSignature.makeSignature();
-rentSignature.clear(0, 0);
