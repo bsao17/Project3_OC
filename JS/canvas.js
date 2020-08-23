@@ -55,14 +55,7 @@ class Canvas {
       this.context.beginPath();
       this.context.moveTo(x - this.canvas[0].getBoundingClientRect().left,
                           y - this.canvas[0].getBoundingClientRect().top);
-      this.count++;
-      if (this.count < 50) {
-          $('#message_canvas').text('Votre signature n\'est pas assez longue.');
-          $('#confirm_location').hide();
-      } else {
-          $('#message_canvas').text('');
-          $('#confirm_location').show();
-      }               
+      
   };
 
   // init different actions do with mouse or finger (for touchscreen)
@@ -71,7 +64,7 @@ class Canvas {
       this.canvas.mouseup(() => { this.stopPosition() });
       this.canvas.mouseleave(() => { this.stopPosition() });
       this.canvas.mousemove(e => { this.paint(e);});
-      this.canvas.on("touchstart", e => { this.startPositionPad(e) });
+      this.canvas.on("touchstart", e => { this.startPositionPad(e); this.canvasEmpty = false; this.canvasEmptydisplay(); });
       this.canvas.on("touchend", () => { this.stopPosition() ;
       });
       this.canvas.on("touchmove", e => { this.paintPad(e) });
@@ -84,11 +77,9 @@ class Canvas {
   };
 
     canvasEmptydisplay() {
-      if (this.canvasEmpty) {
+      if (!this.canvasEmpty) {
         document.querySelector("#buttonConfirmResa").style.opacity = "1";
-      } else if (this.canvasEmpty == false) {
-        document.querySelector("#buttonConfirmResa").style.opacity = "1";
-      }
+      } 
     }
 };  
 
