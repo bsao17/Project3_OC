@@ -13,7 +13,7 @@ class RegexVerify{
             if(regex.test(firstName.value)){
                 console.log('firstName : true');
             }else{
-                alert('Veuillez n\'entrer que des lettres - Letters only !')
+                // alert('Veuillez n\'entrer que des lettres - Letters only !')
                 firstName.value = '';
             }
         }) 
@@ -26,7 +26,7 @@ class RegexVerify{
             if(regex.test(lastName.value)){
                 console.log('lastName : true');
             }else{
-                alert('Veuillez n\'entrer que des lettres - Letters only !')
+                // alert('Veuillez n\'entrer que des lettres - Letters only !')
                 lastName.value = '';
             }
         }) 

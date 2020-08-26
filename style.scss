@@ -1,8 +1,20 @@
+$theme-colors: (
+  "primary": #267FCA,
+  "danger": #ff4136,
+  "secondary": rgb(59, 59, 59),
+);
+
 @import "reset.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 /*----------------------------------------- partie réservée aux média queries --------------------------------------------------------------*/
 
 @media screen and (max-width: 835px) {
+  .navigation{
+    .bouton{
+      width: 15vw !important;
+    }
+  }
   #containerMap {
     display: block !important;
   }
@@ -13,22 +25,19 @@
     width: 80vw !important;
     margin-top: 3vh !important;
   }
-
-  fieldset {
-    font-size: 3vw !important;
-    margin-top: 2vh;
-  }
-  #firstNameLabel {
-    font-size: 3vw;
-  }
-  #lastNameLabel {
-    font-size: 3vw;
+  label{
+    font-size: 5vw;
   }
   #canvasDisplay {
     width: 60vw;
   }
 }
 @media screen and (max-width: 370px) {
+  .navigation{
+    .bouton{
+      width: 15vw !important;
+    }
+  }
   #containerMap {
     display: block !important;
   }
@@ -38,15 +47,17 @@
   #rent {
     width: 80vw !important;
   }
-  #bouton {
-    width: 4rem !important;
-    height: 4rem !important;
-    top: 115% !important;
-    left: 40% !important;
-  }
   fieldset {
     font-size: 5vw !important;
   }
+  .item1{
+    width: 50vw !important;
+    margin: auto !important;
+  }
+  label{
+    font-size: 4vw !important;
+  }
+  
 }
 
 /* -------------------------------------------------- style css  ---------------------------------------------------------------------------*/
@@ -61,12 +72,12 @@
   margin-top: 2rem;
 }
 #display {
-  width: 80vw;
+  width: 50vw;
   height: auto;
   overflow: hidden;
   padding: 0.25rem;
-  border: $borderColor 0.5rem outset;
-  border-radius: 50px;
+  border: $borderColor 0.3rem outset;
+  border-radius: 20px;
   box-shadow: $blackShadow 10px 5px 5px;
   background-color: rgba(59, 59, 59, 0.7);
 }
@@ -97,7 +108,7 @@
   width: 40%;
   margin: auto;
   .bouton {
-    width: 2rem;
+    width: 5vw;
     height: 2rem;
     margin: 10px;
     padding: 5px;
@@ -105,6 +116,7 @@
     border-radius: 5px;
     background-color: gray;
     box-shadow: $blackShadow 10px 5px 5px;
+    font-size: 0;
   }
   button {
     padding: 10px;
@@ -120,23 +132,27 @@
   margin: auto;
   width: 97vw;
   #map {
-    width: 40%;
+    width: 45%;
     height: 40rem;
     padding: 0.5rem 0px 0px 0px;
-    border: outset $borderColor 0.5rem;
-    border-radius: 50px;
+    border: outset $borderColor 0.3rem;
+    border-radius: 30px;
     margin: auto;
     box-shadow: $blackShadow 10px 5px 5px;
   }
   #rent {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
     height: 40rem;
-    border: outset $borderColor 0.5rem;
-    border-radius: 50px;
+    border: outset $borderColor 0.3rem;
+    border-radius: 30px;
     margin: auto;
     padding: 0.5rem 5px 0px 5px;
     box-shadow: $blackShadow 10px 5px 5px;
     background-color: rgba(128, 128, 128, 0.9);
+    overflow: auto;
     h2 {
       display: flex;
       justify-content: start;
@@ -152,7 +168,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 30vw;
         height: 2rem;
         border: solid black 2px;
         background-color: white;
@@ -165,60 +181,32 @@
         box-shadow: black 5px 5px 5px;
       }
     }
-    fieldset {
-      padding-top: 20px;
-      padding-bottom: 60px;
-      border: solid white 5px;
-      border-radius: 15px;
-      font-size: 1.5rem;
-      font-family: $fontGlobal;
-      color: white;
-      background-color: rgb(153, 153, 153);
-    }
+    // fieldset {
+    //   height: 75vh;
+    //   padding-top: 20px;
+    //   padding-bottom: 60px;
+    //   border: solid white 5px;
+    //   border-radius: 15px;
+    //   font-size: 1.5vw;
+    //   font-family: $fontGlobal;
+    //   color: white;
+    //   background-color: rgb(153, 153, 153);
+    // }
     #renseignementsStations {
       display: flex;
       flex-direction: column;
-
-      overflow: auto;
-    }
-    #renseignementsBordure {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      margin-top: 0.5rem;
-      height: 6rem;
-      position: relative;
+      
     }
     #renseignements {
       font-family: $fontGlobal;
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-size: 1.5vw;
     }
-    #firstName {
-      height: 2rem;
-      width: 51%;
-      box-shadow: black 5px 5px 5px;
-      font-size: 1.5rem;
-      text-align: center;
-      margin: 1rem;
-    }
-    #lastName {
-      height: 2rem;
-      width: 60%;
-      box-shadow: black 5px 5px 5px;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    #bouton {
-      width: 15%;
-      height: 4rem;
-      position: absolute;
-      bottom: -6rem;
-      right: 45%;
-
-      border-radius: 50%;
-      border: outset gray 0.5rem;
+    #bailleurLabel{
+      display: flex;
+      justify-content: center;
+      font-size: 2vw;
     }
   }
 }

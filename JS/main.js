@@ -87,9 +87,9 @@ document.querySelector("#buttonConfirmResa").addEventListener("click", () => {
 
 //Fonction de récupération/enregistrement/restitution des données utilisateurs
 
-
-const requirePersonalData = () => {
+const requirePersonalData = (e) => {
   rentSendButton.disabled = true;
+  e.preventDefault();
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   let stationAddress = document.getElementById("info1").textContent;
@@ -120,6 +120,7 @@ const requirePersonalData = () => {
   });
 
   if (window.location.reload) {
+    
     rentSendButton.disabled = true;
     document.querySelector("#buttonConfirmResa").disabled = true;
     if (localStorage.getItem("lastName")) {
@@ -137,4 +138,3 @@ const requirePersonalData = () => {
     vTime.counterContinue();
   }
 })();
-
