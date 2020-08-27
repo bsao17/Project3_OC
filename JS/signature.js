@@ -36,7 +36,6 @@ class Signature{
     }
 
     drawing(x, y){
-        
         this.lineColor;
         this.lineSize;
         this.ctx.lineTo(x, y)

@@ -241,11 +241,12 @@ $theme-colors: (
       margin-bottom: 10px;
     }
   }
-  #legendeReservation {
-    color: $globalColor;
-    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px,
-      #ffffff 1px -1px;
-  }
+}
+
+u{
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
+    font-size: x-large;
 }
 
 .warn{

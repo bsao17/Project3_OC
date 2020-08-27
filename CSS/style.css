@@ -10433,9 +10433,10 @@ h3 {
 .timeCounter #identity #dataSubmit {
   margin-bottom: 10px;
 }
-.timeCounter #legendeReservation {
-  color: rgba(0, 76, 139, 0.61);
-  text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+
+u {
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  font-size: x-large;
 }
 
 .warn {
