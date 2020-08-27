@@ -20,7 +20,7 @@ class Counter {
       counterSeconds = this.seconds--;
 
       this.display.innerHTML =
-        Math.floor(counterMinutes / 60) + " min " + counterSeconds + " sec ";
+        Math.floor(counterMinutes / 60) + "m " + counterSeconds + "s ";
       sessionStorage.setItem("minuteStore", counterMinutes);
       sessionStorage.setItem("secondStore", counterSeconds);
 

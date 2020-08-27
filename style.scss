@@ -1,7 +1,9 @@
 $theme-colors: (
-  "primary": #267FCA,
+  "primary": #58A1D5,
   "danger": #ff4136,
-  "secondary": rgb(59, 59, 59),
+  "secondary": rgb(37, 37, 37),
+  "black": #000000,
+  "grey": #737373e1,
 );
 
 @import "reset.scss";
@@ -29,9 +31,11 @@ $theme-colors: (
     font-size: 5vw;
   }
   #canvasDisplay {
-    width: 60vw;
+    width: 80vw;
   }
 }
+
+
 @media screen and (max-width: 370px) {
   .navigation{
     .bouton{
@@ -56,6 +60,9 @@ $theme-colors: (
   }
   label{
     font-size: 4vw !important;
+  }
+  #display{
+    width: 80vw !important;
   }
   
 }
@@ -160,7 +167,6 @@ $theme-colors: (
       text-align: start;
       color: white;
       font-size: 1.2rem;
-      // margin: 1.5rem 0rem 0rem 2rem;
       font-family: $fontGlobal;
       #info1,
       #info2,
@@ -181,17 +187,7 @@ $theme-colors: (
         box-shadow: black 5px 5px 5px;
       }
     }
-    // fieldset {
-    //   height: 75vh;
-    //   padding-top: 20px;
-    //   padding-bottom: 60px;
-    //   border: solid white 5px;
-    //   border-radius: 15px;
-    //   font-size: 1.5vw;
-    //   font-family: $fontGlobal;
-    //   color: white;
-    //   background-color: rgb(153, 153, 153);
-    // }
+    
     #renseignementsStations {
       display: flex;
       flex-direction: column;
@@ -224,23 +220,13 @@ $theme-colors: (
   margin: auto;
   position: relative;
   #identity {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    span {
-      font-weight: bold;
-      color: red;
-    }
-
     #canvasDisplay {
       right: 0vw;
       top: 15px;
       border: solid black 1px;
       border-radius: 10px;
       background-color: honeydew;
-      margin: 0em;
+      
     }
     .canvasButton {
       width: 25%;
@@ -262,14 +248,6 @@ $theme-colors: (
   }
 }
 
-.index {
-  color: red;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.warning {
-  font-size: 1rem;
+.warn{
   font-style: italic;
-  color: $fontColor;
 }

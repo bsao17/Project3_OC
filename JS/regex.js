@@ -9,12 +9,12 @@ class RegexVerify{
     fnameValidation(){
         const regex = /[-_+a-z+ ]+/gi
         firstName.addEventListener('input', ()=>{
-            let self = this;
             if(regex.test(firstName.value)){
                 console.log('firstName : true');
+                firstName.style.backgroundColor = "white";
             }else{
-                // alert('Veuillez n\'entrer que des lettres - Letters only !')
                 firstName.value = '';
+                firstName.style.backgroundColor = "red";
             }
         }) 
     }
@@ -25,9 +25,10 @@ class RegexVerify{
             
             if(regex.test(lastName.value)){
                 console.log('lastName : true');
+                lastName.style.backgroundColor = "white";
             }else{
-                // alert('Veuillez n\'entrer que des lettres - Letters only !')
                 lastName.value = '';
+                lastName.style.backgroundColor = "red";
             }
         }) 
     }

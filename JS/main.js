@@ -107,6 +107,9 @@ const requirePersonalData = (e) => {
 //Function auto invoquée (IIFE), pour le dataSubmit et rechargement des données après rafraichissement de la page
 (() => {
   rentSendButton.addEventListener("click", requirePersonalData);
+  // rentSendButton.addEventListener('click', function(){
+  //   $("#identity").show()
+  // })
 
   window.addEventListener("load", () => {
     document.querySelector("#buttonConfirmResa").style.opacity = "0";
@@ -120,7 +123,6 @@ const requirePersonalData = (e) => {
   });
 
   if (window.location.reload) {
-    
     rentSendButton.disabled = true;
     document.querySelector("#buttonConfirmResa").disabled = true;
     if (localStorage.getItem("lastName")) {
@@ -134,7 +136,6 @@ const requirePersonalData = (e) => {
       document.getElementById("stationRentInformation").innerHTML =
         sessionStorage.station;
     }
-
     vTime.counterContinue();
   }
 })();
