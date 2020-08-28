@@ -16,10 +16,16 @@ class Station {
   }
 
   markerMapDisplay() {
-    L.marker(this.position)
-      .addTo(mymap)
-      .on("click", () => {
-        this.stationDisplay();
-      });
+    if(this.available_bikes > 0){
+        L.marker(this.position, {icon: greenIcon})
+          .addTo(mymap)
+          .on("click", () => {
+            this.stationDisplay();
+          });
+    }else if(this.available_bikes == 0){
+      L.marker(this.position, {icon: redIcon})
+        .addTo(mymap)
+        
+    }
   }
 }

@@ -6,7 +6,7 @@ class Signature{
         this.lineColor = this.ctx.strokeStyle ='blue';
         this.lineSize = this.ctx.lineWidth = "2";
         this.print = false;
-
+        this.canvasEmpty = true;
          
     }
 
@@ -33,6 +33,11 @@ class Signature{
             this.print = false;
             
         })
+
+        this.canvas.addEventListener('touchstart', (e)=>{
+            e.preventDefault();
+        })
+        
     }
 
     drawing(x, y){
@@ -42,7 +47,15 @@ class Signature{
         this.ctx.stroke();
         
     }
+
+    clearCanvas(x, y){
+        document.getElementById('buttonClearSignature').addEventListener('click', ()=>{
+            this.ctx.clearRect(x, y, this.canvas.width, this.canvas.height);
+            
+        })
+    }
 }
 
 const signature = new Signature('canvasDisplay');
 signature.makeSignature();
+signature.clearCanvas(0, 0);
