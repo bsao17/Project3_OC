@@ -37,6 +37,23 @@ class Signature{
 
         this.canvas.addEventListener('touchstart', (e)=>{
             e.preventDefault();
+            let Xt = e.touches[0].clientX;
+            let Yt = e.touches[0].clientY;
+            this.ctx.beginPath()
+            console.log(Xt, '<=>', Yt);
+        })
+
+        this.canvas.addEventListener('touchmove', (e)=>{
+            e.preventDefault();
+            this.print = true;
+            let canvasRect = this.canvas.getBoundingClientRect();
+            let changed = e.changedTouches;
+            console.log(changed)
+            if(this.print == true){
+                let Xtm = changed[0].clientX - canvasRect.left;
+                let Ytm = changed[0].clientY - canvasRect.top;   
+                this.drawing(Xtm, Ytm)
+            }
         })
         
     }
