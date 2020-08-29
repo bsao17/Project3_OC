@@ -55,7 +55,7 @@
       <div id="map"></div>
       <div id="rent">
         
-          <legend class="d-flex justify-content-center text-light"><strong><u> Détails de la station </u></strong></legend>
+          <legend class="d-flex justify-content-center text-light"><strong><u>Détails de la station </u></strong></legend>
               <form >
                   <div class="bg-primary h5">
                     <div> Adresse de la station </div>
@@ -74,7 +74,7 @@
                 
                 </form>
                 <form class="container form-group">
-                    <legend class="d-flex justify-content-center text-light"><strong><u> Patronyme</u></strong></legend>
+                    <legend class="d-flex justify-content-center text-light"><strong><u>Patronyme</u></strong></legend>
                     
                     <div id="renseignements">
                         <div class="form-group bg-primary">
@@ -100,16 +100,16 @@
               <div class="m-3 h5"><strong class="bg-primary text-secondary">Nom : </strong><span id="name" class="bg-light text-dark pl-2 pr-2"></span></div>
               <div class="m-3 h5"><strong class="bg-primary text-secondary">prénom : </strong><span id="rename" class="bg-light text-dark pl-2 pr-2"></span></div>
               <div class="m-3 h5"><strong class="bg-primary text-secondary">Station : </strong><span id="stationRentInformation" class="bg-light text-dark pl-2 pr-2"></span></div>
-              <div class="m-3 h5 text-center"><strong class="bg-primary text-secondary">Temps restant avant annulation : </strong><br></div>
+              <div class="m-3 h5 text-center"><strong class="bg-primary text-secondary">Temps avant la fin de la réservation : </strong><br></div>
               <div class="h5"><span id="count" class="bg-light text-dark pl-2 pr-2"></span></div>
-              <div class="index" ><button class="btn btn-primary visible" id="buttonConfirmResa">valider<span class="index"></span></button></span></div><br>
-              <div class="warning text-light"><span class="text-warning">*Attention : </span> la fermeture de la fenêtre annule la réservation en cours</div>
+              <div class="" ><button class="btn btn-outline-primary" id="buttonConfirmResa">valider<span></span></button></span></div><br>
+              <div class="warning text-light"><span class="text-warning"><strong>*Attention : </strong></span> la fermeture de la fenêtre annule la réservation en cours</div>
           </div>
           <div id="containerCanvas" class="border border-primary bg-secondary card-body d-flex flex-column mt-2 rounded"> 
             <canvas id="canvasDisplay" width="500" height="155" class="bg-light" ></canvas>
-            <div class="">
-              <button class="btn btn-primary" id="buttonClearSignature"  type="button">Effacer <span class="index"></span></button>
-              <span class="text-light h6 warn">Signez avant de réserver</span>
+            <div>
+              <button class="btn btn-outline-primary mt-2" id="buttonClearSignature"  type="button">Effacer <span class="index"></span></button>
+              <span class="text-warning h6 warn"><br> *Attention : <pre class="text-light mt-2">Signature obligatoire !</pre></span>
             </div>
           </div><br>
       </div>

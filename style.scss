@@ -51,9 +51,6 @@ $theme-colors: (
   #rent {
     width: 80vw !important;
   }
-  fieldset {
-    font-size: 5vw !important;
-  }
   .item1{
     width: 50vw !important;
     margin: auto !important;
@@ -251,4 +248,8 @@ u{
 
 .warn{
   font-style: italic;
+}
+
+#buttonConfirmResa{
+  opacity: 1;
 }

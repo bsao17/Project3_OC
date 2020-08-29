@@ -1,7 +1,7 @@
 "use strict";
 
 //Coordonnées choisies pour l'affichage de la map (Toulouse)
-var mymap = L.map("map").setView([43.6043, 1.4437], 13.5);
+var mymap = L.map("map").setView([43.6043, 1.4437], 12.5);
 
 //Affichage de la carte au coordonnées sélectionnées
 L.tileLayer(
@@ -23,19 +23,15 @@ L.tileLayer(
 let greenIcon = L.icon({
   iconUrl: '../pictures/icones/greenIcone.webp',
   // shadowUrl: 'leaf-shadow.png',
-  iconSize:     [38, 95], // size of the icon
-  shadowSize:   [50, 64], // size of the shadow
-  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-  shadowAnchor: [4, 62],  // the same for the shadow
+  iconSize:     [30, 55], // size of the icon
+  iconAnchor:   [15, 80], // point of the icon which will correspond to marker's location
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
 let redIcon = L.icon({
   iconUrl: '../pictures/icones/redIcon.webp',
   // shadowUrl: 'leaf-shadow.png',
-  iconSize:     [38, 95], // size of the icon
-  shadowSize:   [50, 64], // size of the shadow
-  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-  shadowAnchor: [4, 62],  // the same for the shadow
+  iconSize:     [30, 55], // size of the icon
+  iconAnchor:   [15, 80], // point of the icon which will correspond to marker's location
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });

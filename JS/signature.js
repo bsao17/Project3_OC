@@ -3,10 +3,11 @@ class Signature{
     constructor(canvas){
         this.canvas = document.getElementById(canvas);
         this.ctx = this.canvas.getContext('2d');
-        this.lineColor = this.ctx.strokeStyle ='blue';
-        this.lineSize = this.ctx.lineWidth = "2";
+        this.lineColor = this.ctx.strokeStyle ='#58A1D5';
+        this.lineSize = this.ctx.lineWidth = "1.5";
         this.print = false;
         this.canvasEmpty = true;
+        this.button = false
          
     }
 
@@ -16,6 +17,7 @@ class Signature{
             let X = e.offsetX;
             let Y = e.offsetY;
             this.print = true;
+            this.button = !this.button;
             this.ctx.beginPath();
             console.log(X + 'x', Y + 'Y');
         })
@@ -29,10 +31,9 @@ class Signature{
             }
         })
 
-        this.canvas.addEventListener('mouseup', ()=>{
-            this.print = false;
-            
-        })
+        this.canvas.addEventListener('mouseup', ()=>{ this.print = false; });
+
+        this.canvas.addEventListener('mouseleave', ()=>{ this.print = false; });
 
         this.canvas.addEventListener('touchstart', (e)=>{
             e.preventDefault();

@@ -107,12 +107,9 @@ const requirePersonalData = (e) => {
 //Function auto invoquée (IIFE), pour le dataSubmit et rechargement des données après rafraichissement de la page
 (() => {
   rentSendButton.addEventListener("click", requirePersonalData);
-  // rentSendButton.addEventListener('click', function(){
-  //   $("#identity").show()
-  // })
 
-  window.addEventListener("load", () => {
-    document.querySelector("#buttonConfirmResa").style.opacity = "0";
+  window.addEventListener("DOMcontentload", () => {
+    // document.querySelector("#buttonConfirmResa").style.opacity = "0";
     if (localStorage.getItem("firstName")) {
       document.getElementById("firstName").value = localStorage.firstName;
     }
