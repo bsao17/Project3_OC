@@ -21,7 +21,7 @@ L.tileLayer(
 /**Icons */
 
 let greenIcon = L.icon({
-  iconUrl: '../pictures/icones/greenIcone.webp',
+  iconUrl: 'pictures/icones/greenIcone.webp',
   // shadowUrl: 'leaf-shadow.png',
   iconSize:     [30, 55], // size of the icon
   iconAnchor:   [15, 80], // point of the icon which will correspond to marker's location
@@ -29,7 +29,7 @@ let greenIcon = L.icon({
 });
 
 let redIcon = L.icon({
-  iconUrl: '../pictures/icones/redIcon.webp',
+  iconUrl: 'pictures/icones/redIcon.webp',
   // shadowUrl: 'leaf-shadow.png',
   iconSize:     [30, 55], // size of the icon
   iconAnchor:   [15, 80], // point of the icon which will correspond to marker's location
